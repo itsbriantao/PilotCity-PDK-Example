@@ -27,8 +27,7 @@
         v-if="!readonly"
         class="module-instruct__instructions-add
         font-weight-black text-body-1">
-          <v-icon
-          class="module-instruct__instructions-add-icon">
+          <v-icon class="module-instruct__instructions-add-icon">
             mdi-plus
           </v-icon>
         </div>
@@ -36,9 +35,7 @@
       <div class="d-flex flex-column">
         <div v-if="!readonly" class="module-instruct__actions">
           <div class="module-instruct__actions-cancel text-button">
-            <span href="">
-              cancel
-            </span>
+            <span href="">cancel</span>
           </div>
           <v-btn :ripple="false" height="40" outlined
           class="active module-instruct__actions-save elevation-0">
@@ -70,11 +67,11 @@ export default Vue.extend({
     }`,
   },
   data: () => ({
-    moduleDescription: "As you practice, use and apply the employer's product or service, log how many minutes you use it each time.",
+    moduleDescription: 'The Request for Pilot (RFP) is a document meant to introduce the student to the project they have chosen.',
     instructions: [
-      'Enter number of minutes to log and add “m” at end',
-      'Click on “Log” button to enter the minutes practiced',
-      'View total logged minutes',
+      'Read all sections of the RFP to make sure you understand the problem and the project.',
+      'Do research on the problem and brainstorm your idea.',
+      'Complete all the deliverables in this program to auto-apply for your internship.',
     ], // TODO: parse for empty string (strings w/o _real_ characters)
   }),
   methods: {

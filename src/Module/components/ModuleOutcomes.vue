@@ -2,7 +2,7 @@
   <v-container class="module-outcomes">
     <div class="module-outcomes__container">
       <div class="module-outcomes__items">
-        <div class="module-outcomes__label text-body-1 font-weight-black">
+        <!-- <div class="module-outcomes__label text-body-1 font-weight-black">
           Minimum amount of minutes required before unlocking
         </div>
         <div class="module-outcomes__dropdown">
@@ -57,7 +57,89 @@
               </v-list-item>
             </v-list>
           </v-menu>
+        </div> -->
+        <v-checkbox v-model="checkbox" class="module-outcomes__labels">
+          <template v-slot:label>
+            <div class="text-body-1 font-weight-black">
+              Require students to acknowledge section completion
+            </div>
+          </template>
+        </v-checkbox>
+        <div class="module-outcomes__labels text-h6 font-weight-black">
+          Employer
         </div>
+        <v-text-field outlined hint="The name of your company or organization">
+          <template v-slot:label>
+            <span class="font-weight-black">Name</span>
+          </template>
+        </v-text-field>
+        <v-text-field outlined>
+          <template v-slot:label>
+            <span class="font-weight-black">Website</span>
+          </template>
+        </v-text-field>
+        <!-- <v-text-field outlined placeholder=" ">
+          <template v-slot:label>
+            <span class="font-weight-black">Email</span>
+          </template>
+        </v-text-field> -->
+        <div class="module-outcomes__labels text-h6 font-weight-black">
+          Social
+        </div>
+        <!-- <v-container class="pa-0">
+          <v-row>
+            <v-col>
+              <v-text-field outlined placeholder=" " hide-details>
+                <template v-slot:label>
+                  <span class="font-weight-black">LinkedIn</span>
+                </template>
+              </v-text-field>
+            </v-col>
+            <v-col>
+              <v-text-field outlined placeholder=" " hide-details>
+                <template v-slot:label>
+                  <span class="font-weight-black">Facebook</span>
+                </template>
+              </v-text-field>
+            </v-col>
+          </v-row>
+          <v-row>
+            <v-col>
+              <v-text-field outlined placeholder=" " hide-details>
+                <template v-slot:label>
+                  <span class="font-weight-black">Instagram</span>
+                </template>
+              </v-text-field>
+            </v-col>
+            <v-col>
+              <v-text-field outlined placeholder=" " hide-details>
+                <template v-slot:label>
+                  <span class="font-weight-black">Twitter</span>
+                </template>
+              </v-text-field>
+            </v-col>
+          </v-row>
+        </v-container> -->
+        <v-text-field outlined>
+          <template v-slot:label>
+            <span class="font-weight-black">LinkedIn</span>
+          </template>
+        </v-text-field>
+        <v-text-field outlined>
+          <template v-slot:label>
+            <span class="font-weight-black">Facebook</span>
+          </template>
+        </v-text-field>
+        <v-text-field outlined>
+          <template v-slot:label>
+            <span class="font-weight-black">Instagram</span>
+          </template>
+        </v-text-field>
+        <v-text-field outlined>
+          <template v-slot:label>
+            <span class="font-weight-black">Twitter</span>
+          </template>
+        </v-text-field>
       </div>
       <div class="d-flex flex-column">
         <div class="module-outcomes__actions">

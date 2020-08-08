@@ -53,8 +53,8 @@ export default Vue.extend({
     'module-preview': Module.Default,
   },
   data: () => ({
-    moduleName: 'Practice Log',
-    pages: ['Metrics', 'Instruct', 'Outcomes', 'edit', 'Preview'],
+    moduleName: 'Request for Pilot',
+    pages: ['Metrics', 'Instruct', 'Outcomes', 'Edit', 'Preview'],
     currentPage: 'Instruct',
   }),
   computed: {

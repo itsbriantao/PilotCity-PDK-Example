@@ -1,6 +1,6 @@
 .module-default{
-  max-height: 725px;
-  overflow: hidden;
+  // max-height: 725px;
+  // overflow: scroll;
   & .hr{
     border-bottom: 1px var(--v-secondary-base) solid;
   }
@@ -17,6 +17,9 @@
     max-width: 236px;
     flex-direction: column;
     align-items: center;
+  }
+  &__btn{
+    width: 55%;
   }
   &__input{
     &-text div.v-input__slot input{

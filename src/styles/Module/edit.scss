@@ -4,14 +4,18 @@
 }
 .module-edit{
   &__container{
-    max-width: 425px;
+    max-width: 70%;
     width: 100%;
-    margin-right: 15%;
   }
+  // &__section{
+  //   margin-bottom: 0px;
+  //   padding-bottom: 0px;
+  // }
   &__title{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-bottom: 2px;
     & .time{
       text-align: end;
       padding-right: 30px;
@@ -20,7 +24,7 @@
       margin-bottom: 16px;
     }
     & > div{
-      flex-directoin: column;
+      flex-direction: column;
       flex-basis: 100%;
       flex:1;
     }
